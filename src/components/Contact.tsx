@@ -1,5 +1,6 @@
-import React from 'react';
-import { Mail, Instagram, Youtube } from 'lucide-react';
+import React from "react";
+import { Mail, Instagram, Linkedin, Phone } from "lucide-react";
+import { SocialLinks } from "./ui/SocialLinks";
 
 export default function Contact() {
   return (
@@ -12,26 +13,20 @@ export default function Contact() {
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl card-shadow p-8">
             <div className="flex flex-col md:flex-row gap-8">
               <div className="flex-1">
-                <h3 className="text-xl font-semibold mb-6 text-gray-800">Contact Information</h3>
-                <div className="space-y-6">
-                  <a href="mailto:contact@temileyi.com" className="flex items-center gap-3 text-gray-600 hover:text-primary-dark transition-colors">
-                    <Mail size={20} />
-                    contact@temileyi.com
-                  </a>
-                  <a href="#" className="flex items-center gap-3 text-gray-600 hover:text-primary-dark transition-colors">
-                    <Instagram size={20} />
-                    @temileyi
-                  </a>
-                  <a href="#" className="flex items-center gap-3 text-gray-600 hover:text-primary-dark transition-colors">
-                    <Youtube size={20} />
-                    Temileyi
-                  </a>
-                </div>
+                <h3 className="text-xl font-semibold mb-6 text-gray-800">
+                  Contact Information
+                </h3>
+                <SocialLinks />
               </div>
               <div className="flex-1">
                 <form className="space-y-4">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-medium text-gray-700"
+                    >
+                      Name
+                    </label>
                     <input
                       type="text"
                       id="name"
@@ -39,7 +34,12 @@ export default function Contact() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium text-gray-700"
+                    >
+                      Email
+                    </label>
                     <input
                       type="email"
                       id="email"
@@ -47,7 +47,12 @@ export default function Contact() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
+                    <label
+                      htmlFor="message"
+                      className="block text-sm font-medium text-gray-700"
+                    >
+                      Message
+                    </label>
                     <textarea
                       id="message"
                       rows={4}
