@@ -1,6 +1,5 @@
 import React from "react";
 import { Play, ExternalLink } from "lucide-react";
-import Temileyi from "../assets/TemileyiP.jpg";
 
 export default function Portfolio() {
   const projects = [
@@ -9,40 +8,31 @@ export default function Portfolio() {
       category: "Social Media",
       image:
         "https://images.unsplash.com/photo-1533561797500-4fad4750814e?auto=format&fit=crop&q=80",
-      videoUrl: "https://youtube.com/your-video-1",
     },
     {
       title: "Brand Story",
       category: "Promotional",
       image:
         "https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&fit=crop&q=80",
-      videoUrl: "https://youtube.com/your-video-2",
     },
     {
       title: "Event Highlights",
       category: "Events",
       image:
         "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80",
-      videoUrl: "https://youtube.com/your-video-3",
     },
   ];
 
   return (
     <section id="portfolio" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto mb-16 text-center">
-          <img
-            src={Temileyi}
-            alt="Temileyi"
-            className="w-36 h-40 rounded-full mx-auto mb-6 border-4 border-primary-light shadow-xl"
-          />
-          <h2 className="text-3xl font-bold mb-4">
-            My <span className="text-primary-dark">Portfolio</span>
-          </h2>
-          <p className="text-gray-600">
-            Check out some of my recent video editing work
-          </p>
-        </div>
+        <h2 className="text-3xl font-bold text-center mb-4">
+          My <span className="text-primary-dark">Portfolio</span>
+        </h2>
+        <p className="text-center text-gray-600 mb-16">
+          Tap to watch my video edits
+        </p>
+
         <div className="grid md:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <a
